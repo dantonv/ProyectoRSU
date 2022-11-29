@@ -3,19 +3,18 @@ package com.anton.proyectorsu.Vista.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.anton.proyectorsu.R;
 import com.bumptech.glide.Glide;
 
-import org.w3c.dom.Text;
-
 public class NewImageActivity extends AppCompatActivity {
 
     private ImageView fullImageView;
-    private TextView txt_new_activity, txt_desc, txt_precio1;
+    private TextView txt_new_activity, txt_desc, textView4;
+    private String costo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +26,15 @@ public class NewImageActivity extends AppCompatActivity {
         Glide.with(this).load(getIntent().getStringExtra("Image@#")).into(fullImageView);
 
         //Casteo mis variables
+        Log.i("hola",getIntent().getStringExtra("precio@#"));
+        costo= getIntent().getStringExtra("precio@#");
+        textView4 = findViewById(R.id.textView4);
+        textView4.setText("S/"+costo);
         txt_new_activity = findViewById(R.id.txt_new_activity);
         txt_new_activity.setText(getIntent().getStringExtra("nombre@#"));
         txt_desc = findViewById(R.id.txt_desc);
         txt_desc.setText(getIntent().getStringExtra("descripcion@#"));
-        txt_precio1 = findViewById(R.id.txt_precio1);
-        txt_precio1.setText(getIntent().getStringExtra("precio©#"));
+
 
     }
 }
