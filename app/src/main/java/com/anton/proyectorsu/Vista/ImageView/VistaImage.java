@@ -48,7 +48,10 @@ public class VistaImage extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
                         ImageModel imageModel = new ImageModel();
                         imageModel.setNombre(dataSnapshot1.child("nombre").getValue().toString());
+                        imageModel.setDescripcion(dataSnapshot1.child("descripcion").getValue().toString());
+                        imageModel.setPrecio(dataSnapshot1.child("precio").getValue().toString());
                         imageModel.setImageurl(dataSnapshot1.child("image").getValue().toString());
+
 
                         imageModelArrayList.add(imageModel);
 

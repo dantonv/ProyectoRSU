@@ -55,6 +55,7 @@ public class RecyclerImageAdapter extends RecyclerView.Adapter<RecyclerImageAdap
                 //añado el txt_new_activity y txt_descripcion
                 intent.putExtra("nombre@#", imageModelArrayList.get(position).getNombre());
                 intent.putExtra("descripcion@#", imageModelArrayList.get(position).getDescripcion());
+                intent.putExtra("precio@#", imageModelArrayList.get(position).getPrecio());
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }

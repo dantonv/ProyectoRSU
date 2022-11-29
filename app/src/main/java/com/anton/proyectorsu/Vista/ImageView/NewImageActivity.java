@@ -15,7 +15,7 @@ import org.w3c.dom.Text;
 public class NewImageActivity extends AppCompatActivity {
 
     private ImageView fullImageView;
-    private TextView txt_new_activity, txt_descripcion;
+    private TextView txt_new_activity, txt_desc, txt_precio1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,10 @@ public class NewImageActivity extends AppCompatActivity {
         //Casteo mis variables
         txt_new_activity = findViewById(R.id.txt_new_activity);
         txt_new_activity.setText(getIntent().getStringExtra("nombre@#"));
-        txt_descripcion = findViewById(R.id.txt_descripcion);
-        txt_descripcion.setText(getIntent().getStringExtra("descripcion@#"));
+        txt_desc = findViewById(R.id.txt_desc);
+        txt_desc.setText(getIntent().getStringExtra("descripcion@#"));
+        txt_precio1 = findViewById(R.id.txt_precio1);
+        txt_precio1.setText(getIntent().getStringExtra("precio©#"));
 
     }
 }

@@ -6,9 +6,7 @@ public class ImageModel {
     String imageurl;
     String nombre;
     String descripcion;
-    double precio;
-
-    public String getNumero(){return Double.toString(precio);}
+    String precio;
 
     public String getNombre() {
         return nombre;
@@ -26,11 +24,11 @@ public class ImageModel {
         this.descripcion = descripcion;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(Double precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
