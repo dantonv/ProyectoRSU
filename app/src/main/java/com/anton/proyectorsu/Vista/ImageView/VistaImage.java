@@ -38,7 +38,7 @@ public class VistaImage extends AppCompatActivity {
         imageModelArrayList = new ArrayList<>();
 
         clearAll();
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Images");
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Images");
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -47,7 +47,10 @@ public class VistaImage extends AppCompatActivity {
 
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
                         ImageModel imageModel = new ImageModel();
-                        imageModel.setImageurl(dataSnapshot1.getValue().toString());
+                        imageModel.setNombre(dataSnapshot1.child("nombre").getValue().toString());
+                        imageModel.setDescripcion(dataSnapshot1.child("descripcion").getValue().toString());
+                        imageModel.setPrecio(dataSnapshot1.child("precio").getValue().toString());
+                        imageModel.setImageurl(dataSnapshot1.child("image").getValue().toString());
 
                         imageModelArrayList.add(imageModel);
 

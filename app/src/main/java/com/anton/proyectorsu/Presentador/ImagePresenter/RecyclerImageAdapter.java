@@ -45,7 +45,7 @@ public class RecyclerImageAdapter extends RecyclerView.Adapter<RecyclerImageAdap
 
         holder.txt_nombre.setText(imageModelArrayList.get(position).getNombre());
         holder.txt_descripcion.setText(imageModelArrayList.get(position).getDescripcion());
-        holder.txt_precio.setText(imageModelArrayList.get(position).getPrecio());
+        holder.txt_precio.setText(imageModelArrayList.get(position).getNumero());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

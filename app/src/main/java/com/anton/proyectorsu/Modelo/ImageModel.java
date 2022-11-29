@@ -8,6 +8,8 @@ public class ImageModel {
     String descripcion;
     double precio;
 
+    public String getNumero(){return Double.toString(precio);}
+
     public String getNombre() {
         return nombre;
     }
