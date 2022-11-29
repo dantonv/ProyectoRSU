@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    tools:context=".Vista.LoginView.VistaLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/titulo_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a Oferplas"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+        android:id="@+id/txt_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/color_quinto"
+        android:hint="Ingrese su correo electronico"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_tercero"
+        android:drawableLeft="@drawable/ic_usuario"/>
+
+
+    <EditText
+        android:id="@+id/txt_clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/color_quinto"
+        android:hint="Ingrese su contraseña"
+        android:backgroundTint="@color/color_tercero"
+        android:drawableLeft="@drawable/ic_clave"/>
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesion"
+        android:layout_margin="10dp"
+        android:background="@drawable/boton_redondeo"/>
+
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="¿Eres nuevo? Haz click en"
+            android:textColor="@color/color_tercero"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="REGISTRATE"
+            android:textColor="@color/color_tercero"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

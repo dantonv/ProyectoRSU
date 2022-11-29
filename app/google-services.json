@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "267409687003",
+    "firebase_url": "https://proyectorsu-9c82c-default-rtdb.firebaseio.com",
+    "project_id": "proyectorsu-9c82c",
+    "storage_bucket": "proyectorsu-9c82c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267409687003:android:db5ba7d984bef6fc4167fe",
+        "android_client_info": {
+          "package_name": "com.anton.proyectorsu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267409687003-m8uf65jgvhlkoe7bcm5u2b5gt5gq52n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeVww0rl74Gtco2-W6t3VBO_ewCKfz104"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267409687003-m8uf65jgvhlkoe7bcm5u2b5gt5gq52n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
