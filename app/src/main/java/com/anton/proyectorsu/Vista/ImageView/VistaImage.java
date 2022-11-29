@@ -32,7 +32,7 @@ public class VistaImage extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
 
-        recyclerView.setLayoutManager(new GridLayoutManager(VistaImage.this, 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(VistaImage.this, 1));
         recyclerView.setHasFixedSize(true);
 
         imageModelArrayList = new ArrayList<>();
@@ -48,8 +48,6 @@ public class VistaImage extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
                         ImageModel imageModel = new ImageModel();
                         imageModel.setNombre(dataSnapshot1.child("nombre").getValue().toString());
-                        imageModel.setDescripcion(dataSnapshot1.child("descripcion").getValue().toString());
-                        imageModel.setPrecio(dataSnapshot1.child("precio").getValue().toString());
                         imageModel.setImageurl(dataSnapshot1.child("image").getValue().toString());
 
                         imageModelArrayList.add(imageModel);

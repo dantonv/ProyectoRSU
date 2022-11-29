@@ -55,7 +55,7 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
 
                 String email = txt_correo.getText().toString().trim();
                 String password = txt_clave.getText().toString().trim();
-                presentadorLogin.LoginUsuario(email, password);
+
 
                 if(TextUtils.isEmpty(email)){
                     txt_correo.setError("Ingrese correo");
@@ -63,6 +63,8 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
                 }else if(TextUtils.isEmpty(password)){
                     txt_clave.setError("Ingrese su contraseña");
                     txt_clave.requestFocus();
+                }else{
+                    presentadorLogin.LoginUsuario(email, password);
                 }
                 break;
 
